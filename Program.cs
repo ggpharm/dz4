@@ -19,18 +19,6 @@ void FillArray(int [] newArray)
 
 }
 
-
-
-int[] ArrayOfNumbers(int size)
-{ 
-    int [] array = new int [size];
-    for (int i = 0; i < size; i++)
-    {
-        array[i] = InputNum($"Введите цифру {i} из массива: ");
-    }
-    return array;
-}
-
 void PrintArray(int[] newArray)
 {   Console.WriteLine("Ваш массив:");
     for (int i = 0; i < newArray.Length; i++)
@@ -48,7 +36,6 @@ int Chet(int[] newArray)
         count++;
     } 
     Console.WriteLine($"Количество четных чисел {count}");
-
     return count;
 }
 
